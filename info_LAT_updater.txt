@@ -1,0 +1,10 @@
+LAT_updater
+
+update last-access-time (LAT) of files and folders
+
+v 1.0
+	init
+	use argparse --path option for designating top path for LAT update.
+	LAT of files and folders under --path will be also updated.
+	argparse --path 옵션으로 LAT를 갱신할 최상위 경로를 입력하세요.
+	--path의 하위 파일 및 폴더의 LAT도 갱신됩니다.
