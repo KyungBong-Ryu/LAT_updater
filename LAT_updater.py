@@ -31,9 +31,9 @@ def update_atime(in_path, prev_count_suc_file=0, prev_count_suc_folder=0, prev_c
             else:
                 # it is not a file
                 _c_suc_file, _c_suc_folder, _c_err = update_atime(_curr
-                                                                 ,_count_suc_file
-                                                                 ,_count_suc_folder
-                                                                 ,_count_err
+                                                                 ,_count_suc_file   + prev_count_suc_file
+                                                                 ,_count_suc_folder + prev_count_suc_folder
+                                                                 ,_count_err        + prev_count_err
                                                                  )
                 _count_suc_file     += _c_suc_file
                 _count_suc_folder   += _c_suc_folder

@@ -8,3 +8,6 @@ v 1.0
 	LAT of files and folders under --path will be also updated.
 	argparse --path 옵션으로 LAT를 갱신할 최상위 경로를 입력하세요.
 	--path의 하위 파일 및 폴더의 LAT도 갱신됩니다.
+
+v 1.1
+	현재까지 갱신된 파일 수 출력 (Updated ...) 표기오류 수정  
