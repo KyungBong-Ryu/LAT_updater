@@ -3,11 +3,17 @@ LAT_updater
 update last-access-time (LAT) of files and folders
 
 v 1.0
-	init
-	use argparse --path option for designating top path for LAT update.
-	LAT of files and folders under --path will be also updated.
-	argparse --path 옵션으로 LAT를 갱신할 최상위 경로를 입력하세요.
-	--path의 하위 파일 및 폴더의 LAT도 갱신됩니다.
+    init
+    use argparse --path option for designating top path for LAT update.
+    LAT of files and folders under --path will be also updated.
+    argparse --path 옵션으로 LAT를 갱신할 최상위 경로를 입력하세요.
+    --path의 하위 파일 및 폴더의 LAT도 갱신됩니다.
 
 v 1.1
-	현재까지 갱신된 파일 수 출력 (Updated ...) 표기오류 수정  
+    현재까지 갱신된 파일 수 출력 (Updated ...) 표기오류 수정
+
+v.1.2
+    코드 가독성 향상
+    파일 혹은 폴더의 이름에서 지정된 접두사를 제거하는 기능 추가
+        파일명 변경으로 인해 중복 파일 발생 시, 이름 변경 안함
+    COMMAND: python LAT_updater.py --path "TOP" --head "HEAD"
