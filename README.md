@@ -1,4 +1,11 @@
 # LAT_updater
+v 1.2 COMMAND
+
+python LAT_updater.py --path "TOP" --head "HEAD"
+
+# Info
+Written in v 1.1
+
 Update last-access-time (last access time, LAT) of files and folders with easy command.
 
 Most auto-erase system for files are utilizing atime (same as LAT) information.
